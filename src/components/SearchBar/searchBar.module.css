@@ -1,0 +1,54 @@
+.searchBarContainer {
+  margin: 40px auto;
+  width: fit-content;
+}
+.searchBar {
+  width: 220px;
+  height: 30px;
+  border: 1px solid black;
+}
+.smallProductCard {
+  width: 226px;
+  height: 50px;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  border-bottom: 1px black solid;
+}
+.smallImgWrapper {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+.smallImg {
+  width: 100%;
+  height: 100%;
+}
+.title {
+  font-size: 0.8em;
+  margin-right: 5px;
+}
+.overlayWrapper {
+  position: relative;
+}
+.productOverlay {
+  background-color: rgb(230, 229, 229);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+@media screen and (min-width: 600px) {
+  .searchBar {
+    width: 400px;
+    height: 40px;
+  }
+  .smallProductCard {
+    width: 406px;
+    height: 100px;
+  }
+  .smallImgWrapper {
+    width: 100px;
+    height: 100px;
+  }
+}
