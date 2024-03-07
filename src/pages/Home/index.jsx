@@ -3,6 +3,7 @@ import { useFetchProducts } from '../../hooks/FetchProducts';
 import styles from './home.module.css';
 import { DisplayPrice } from '../../components/ProductPrice';
 import { SearchBar } from '../../components/SearchBar';
+import { Link } from 'react-router-dom';
 /**
  * component that creates the homepage with a search bar component and the products
  * @returns home page
@@ -24,7 +25,11 @@ export function HomePage() {
         <SearchBar array={allProducts}></SearchBar>
         <section className={styles.productSection}>
           {allProducts.map((item) => (
-            <div key={item.id} className={styles.productCard}>
+            <Link
+              key={item.id}
+              className={styles.productCard}
+              to={`product/${item.id}`}
+            >
               <div className={styles.imgWrapper}>
                 <img
                   src={item.image.url}
@@ -32,13 +37,13 @@ export function HomePage() {
                   alt="product image"
                 ></img>
               </div>
-              <h3>{item.title}</h3>
+              <h3 className={styles.title}>{item.title}</h3>
               <h4 className={styles.rating}>Rating: {item.rating}/5</h4>
               <DisplayPrice
                 priceA={item.price}
                 priceB={item.discountedPrice}
               ></DisplayPrice>
-            </div>
+            </Link>
           ))}
         </section>
       </main>
