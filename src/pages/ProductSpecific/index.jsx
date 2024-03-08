@@ -32,16 +32,30 @@ export function ProductSpecific() {
     const imageUrl = image && image.url ? image.url : '';
     return (
       <main>
-        <h1>{title}</h1>
-        <div className={styles.imgWrapper}>
-          <img src={imageUrl} className={styles.img} alt="product image"></img>
-        </div>
-        <div>
-          <p>{description}</p>
-          <p>Rating {rating}/5</p>
-        </div>
-        <DisplayPrice priceA={price} priceB={discountedPrice}></DisplayPrice>
-        <BuyBtn></BuyBtn>
+        <section className={styles.productSection}>
+          <div className={styles.imgWrapper}>
+            <img
+              src={imageUrl}
+              className={styles.img}
+              alt="product image"
+            ></img>
+          </div>
+          <div className={styles.productInformationWrapper}>
+            <h1>{title}</h1>
+            <div className={styles.description}>
+              <p>{description}</p>
+              <p className={styles.rating}>Rating {rating}/5</p>
+            </div>
+            <div className={styles.price}>
+              <DisplayPrice
+                priceA={price}
+                priceB={discountedPrice}
+                className={styles.price}
+              ></DisplayPrice>
+            </div>
+            <BuyBtn></BuyBtn>
+          </div>
+        </section>
         <Reviews array={reviews}></Reviews>
       </main>
     );

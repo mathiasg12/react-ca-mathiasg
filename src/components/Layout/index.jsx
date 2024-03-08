@@ -11,7 +11,7 @@ export function Layout() {
       <Header></Header>
       <Outlet></Outlet>
       <Routes>
-        <Route index element={<HomePage></HomePage>}></Route>
+        <Route path="/" element={<HomePage></HomePage>}></Route>
         <Route
           path="product/:id"
           element={<ProductSpecific></ProductSpecific>}
