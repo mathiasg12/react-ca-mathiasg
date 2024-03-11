@@ -3,6 +3,7 @@ import styles from './searchBar.module.css';
 import { search } from '../../js/search';
 import { DisplayPrice } from '../ProductPrice';
 import { DisplayPriceSearchBar } from '../SearchProductPrice';
+import { Link } from 'react-router-dom';
 export function SearchBar(props) {
   const { array } = props;
   const [searchValue, setSearchValue] = useState('');
@@ -22,7 +23,11 @@ export function SearchBar(props) {
         <div className={styles.overlayWrapper}>
           <div className={styles.productOverlay}>
             {filteredArray.map((item) => (
-              <div key={item.id} className={styles.smallProductCard}>
+              <Link
+                key={item.id}
+                className={styles.smallProductCard}
+                to={`product/${item.id}`}
+              >
                 <div className={styles.smallImgWrapper}>
                   <img
                     src={item.image.url}
@@ -35,7 +40,7 @@ export function SearchBar(props) {
                   priceA={item.price}
                   priceB={item.discountedPrice}
                 ></DisplayPriceSearchBar>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
