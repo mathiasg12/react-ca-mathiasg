@@ -1,0 +1,9 @@
+.removeAndAddButtonWrapper {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  margin-left: 20px;
+}
+.quantity {
+  margin: 0 5px;
+}

@@ -5,6 +5,7 @@ import { Footer } from '../Footer';
 import styles from './layout.module.css';
 import { HomePage } from '../../pages/Home';
 import { ProductSpecific } from '../../pages/ProductSpecific';
+import { CartPage } from '../../pages/Cart';
 export function Layout() {
   return (
     <div className={styles.wrapper}>
@@ -17,7 +18,7 @@ export function Layout() {
           element={<ProductSpecific></ProductSpecific>}
         ></Route>
         <Route path="contact"></Route>
-        <Route path="cart"></Route>
+        <Route path="cart" element={<CartPage></CartPage>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

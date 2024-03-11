@@ -4,6 +4,7 @@ import styles from './specificProduct.module.css';
 import { DisplayPrice } from '../../components/ProductPrice';
 import { BuyBtn } from '../../components/BuyBtn';
 import { Reviews } from '../../components/Reviews';
+import { formatPrice } from '../../js/formatPrice';
 
 export function ProductSpecific() {
   const { id } = useParams();
@@ -21,6 +22,7 @@ export function ProductSpecific() {
   if (!loading) {
     console.log(singleProduct);
     const {
+      id,
       title,
       description,
       image,
@@ -53,7 +55,13 @@ export function ProductSpecific() {
                 className={styles.price}
               ></DisplayPrice>
             </div>
-            <BuyBtn></BuyBtn>
+            <BuyBtn
+              id={id}
+              title={title}
+              price={price}
+              discountedPrice={discountedPrice}
+              imageUrl={imageUrl}
+            ></BuyBtn>
           </div>
         </section>
         <Reviews array={reviews}></Reviews>
