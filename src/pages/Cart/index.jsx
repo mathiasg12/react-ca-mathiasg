@@ -7,7 +7,6 @@ import { AddAndRemoveBtn } from '../../components/AddAndRemoveBtn';
 export function CartPage() {
   const cart = useCartStore((state) => state.cart);
   const total = useCartStore((state) => state.total);
-  const removeItem = useCartStore((state) => state.removeProduct);
   console.log(cart);
   console.log(total);
   return (
@@ -15,21 +14,23 @@ export function CartPage() {
       <h1>Cart</h1>
       <section>
         {cart.map((cartItems) => (
-          <div id={cartItems.id} className={styles.cartItem}>
+          <div id={cartItems.id} className={styles.cartItem} key={cartItems.id}>
             <div className={styles.flexRow1}>
               <div className={styles.imgWrapper}>
                 <img
                   className={styles.img}
                   alt="product image"
-                  src={cartItems.imageUrl}
+                  src={cartItems.image.url}
                 ></img>
               </div>
               <h2>{cartItems.title}</h2>
             </div>
             <div className={styles.flexRow2}>
-              <AddAndRemoveBtn object={cartItems}></AddAndRemoveBtn>
+              <AddAndRemoveBtn product={cartItems}></AddAndRemoveBtn>
               <div>
-                <p>${cartItems.discountedPrice * cartItems.quantity}</p>
+                <p>
+                  ${formatPrice(cartItems.discountedPrice * cartItems.quantity)}
+                </p>
               </div>
             </div>
           </div>

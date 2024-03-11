@@ -22,16 +22,30 @@ export const useCartStore = create((set) => ({
   },
   changeTotal: (price) => {
     set((state) => ({
-      total: (state.total += price),
+      total: state.total + price,
     }));
   },
-  removeProduct: (productId) => {
-    set((state) => ({
-      cart: state.cart.filter((product) => product.id !== productId),
-      total:
-        state.total -
-        state.cart.find((item) => item.id === productId).discountedPrice,
-    }));
+  removeProduct: (product) => {
+    set((state) => {
+      const findProductIndex = state.cart.findIndex(
+        (item) => item.id === product.id
+      );
+      const newCart = [...state.cart];
+      if (newCart[findProductIndex].quantity > 1) {
+        newCart[findProductIndex].quantity -= 1;
+        return {
+          cart: newCart,
+          total: state.total - product.discountedPrice,
+        };
+      } else {
+        return {
+          cart: newCart.filter((currentItem) => {
+            return currentItem.id !== product.id;
+          }),
+          total: state.total - product.discountedPrice,
+        };
+      }
+    });
   },
   clearCart: () => set(() => ({ cart: [] })),
 }));

@@ -55,13 +55,7 @@ export function ProductSpecific() {
                 className={styles.price}
               ></DisplayPrice>
             </div>
-            <BuyBtn
-              id={id}
-              title={title}
-              price={price}
-              discountedPrice={discountedPrice}
-              imageUrl={imageUrl}
-            ></BuyBtn>
+            <BuyBtn product={singleProduct}></BuyBtn>
           </div>
         </section>
         <Reviews array={reviews}></Reviews>

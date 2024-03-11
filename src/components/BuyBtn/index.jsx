@@ -8,14 +8,8 @@ export function BuyBtn(props) {
     <button
       className={styles.addToCart}
       onClick={() => {
-        addToCart({
-          id: props.id,
-          title: props.title,
-          imageUrl: props.imageUrl,
-          price: props.price,
-          discountedPrice: props.discountedPrice,
-        });
-        changeTotal(props.discountedPrice);
+        addToCart(props.product);
+        changeTotal(props.product.discountedPrice);
       }}
     >
       Add to cart
