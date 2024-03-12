@@ -1,5 +1,5 @@
 .imgWrapper {
-  max-width: 50px;
+  width: 50px;
   height: 50px;
   margin: 0 20px;
 }
@@ -11,14 +11,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 20px;
+  margin: 10px 20px 0 0;
   border-bottom: 1px solid black;
 }
 .flexRow1,
 .flexRow2 {
   display: flex;
   align-items: center;
-  min-width: 200px;
+  min-width: 250px;
+}
+.flexRow2 {
   justify-content: space-between;
 }
 h1 {
@@ -26,5 +28,28 @@ h1 {
   width: fit-content;
 }
 .total {
-  margin-left: 20px;
+  margin: 50px auto;
+  width: fit-content;
+}
+.title {
+  font-size: 1em;
+}
+.checkOutSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 600px) {
+  .title {
+    font-size: 1.5em;
+  }
+  .imgWrapper {
+    width: 100px;
+    height: 100px;
+    margin: 0 20px 0 0;
+  }
+  .cartSection {
+    max-width: 700px;
+    margin: 0 auto;
+  }
 }

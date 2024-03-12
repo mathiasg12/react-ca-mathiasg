@@ -4,6 +4,11 @@ import { search } from '../../js/search';
 import { DisplayPrice } from '../ProductPrice';
 import { DisplayPriceSearchBar } from '../SearchProductPrice';
 import { Link } from 'react-router-dom';
+/**
+ * the search bar components, displays the search bar and the results of the search
+ * @param {array} props
+ * @returns array
+ */
 export function SearchBar(props) {
   const { array } = props;
   const [searchValue, setSearchValue] = useState('');

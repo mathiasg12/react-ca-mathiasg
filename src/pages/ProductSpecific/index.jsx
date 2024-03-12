@@ -4,8 +4,10 @@ import styles from './specificProduct.module.css';
 import { DisplayPrice } from '../../components/ProductPrice';
 import { BuyBtn } from '../../components/BuyBtn';
 import { Reviews } from '../../components/Reviews';
-import { formatPrice } from '../../js/formatPrice';
-
+/**
+ * function that returns jsx that contain the specific page for each product
+ * @returns the product specific page
+ */
 export function ProductSpecific() {
   const { id } = useParams();
   const { products, newError, loading } = useFetchProducts(
@@ -22,7 +24,6 @@ export function ProductSpecific() {
   if (!loading) {
     console.log(singleProduct);
     const {
-      id,
       title,
       description,
       image,

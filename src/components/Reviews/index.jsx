@@ -1,5 +1,9 @@
 import React from 'react';
 import styles from './reviews.module.css';
+/**
+ * component that takes an arrray or object and displays its content in a review section
+ * @param {array} props
+ */
 export function Reviews(props) {
   const { array } = props;
   if (!array || array.length < 1) {

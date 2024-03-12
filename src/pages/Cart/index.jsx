@@ -3,7 +3,10 @@ import { useCartStore } from '../../states/cart';
 import { CheckOutBtn } from '../../components/CheckOutBtn';
 import styles from './cart.module.css';
 import { AddAndRemoveBtn } from '../../components/AddAndRemoveBtn';
-
+/**
+ * component that returns the cart page
+ * @returns the main of the cart page
+ */
 export function CartPage() {
   const cart = useCartStore((state) => state.cart);
   const total = useCartStore((state) => state.total);
@@ -12,7 +15,7 @@ export function CartPage() {
   return (
     <main>
       <h1>Cart</h1>
-      <section>
+      <section className={styles.cartSection}>
         {cart.map((cartItems) => (
           <div id={cartItems.id} className={styles.cartItem} key={cartItems.id}>
             <div className={styles.flexRow1}>
@@ -23,7 +26,7 @@ export function CartPage() {
                   src={cartItems.image.url}
                 ></img>
               </div>
-              <h2>{cartItems.title}</h2>
+              <h2 className={styles.title}>{cartItems.title}</h2>
             </div>
             <div className={styles.flexRow2}>
               <AddAndRemoveBtn product={cartItems}></AddAndRemoveBtn>
@@ -36,7 +39,7 @@ export function CartPage() {
           </div>
         ))}
       </section>
-      <section>
+      <section className={styles.checkOutSection}>
         <h2 className={styles.total}>Total: ${formatPrice(total)}</h2>
         <CheckOutBtn></CheckOutBtn>
       </section>

@@ -1,4 +1,9 @@
 import React, { useEffect, useState } from 'react';
+/**
+ * hook that calls an API and fetches data and returns that data
+ * @param {string} URL
+ * @returns array
+ */
 export function useFetchProducts(URL) {
   const [products, setProducts] = useState([]);
   const [newError, setNewError] = useState(false);

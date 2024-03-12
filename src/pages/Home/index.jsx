@@ -5,7 +5,7 @@ import { DisplayPrice } from '../../components/ProductPrice';
 import { SearchBar } from '../../components/SearchBar';
 import { Link } from 'react-router-dom';
 /**
- * component that creates the homepage with a search bar component and the products
+ * component that creates the homepage with a search bar component and loops thrue the products from the api
  * @returns home page
  */
 export function HomePage() {

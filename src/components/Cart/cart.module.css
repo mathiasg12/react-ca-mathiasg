@@ -1,0 +1,19 @@
+.cartIconWrapper {
+  position: relative;
+  display: inline-block;
+}
+.quantityInCart {
+  margin: 0;
+  background-color: red;
+  border-radius: 50%;
+  height: 20px;
+  padding: 1px;
+  width: 20px;
+  font-size: 0.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -30%;
+  right: -40%;
+}

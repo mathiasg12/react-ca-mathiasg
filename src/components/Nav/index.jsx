@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './nav.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
-
+import { Cart } from '../Cart';
 /**
  * function Nav creates the nav component
  * @returns nav component
@@ -24,7 +22,7 @@ export function Nav() {
         </li>
         <li className={styles.li}>
           <Link className={styles.link} to="/cart">
-            <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
+            <Cart></Cart>
           </Link>
         </li>
       </ul>
