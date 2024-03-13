@@ -3,6 +3,7 @@ import { useCartStore } from '../../states/cart';
 import { CheckOutBtn } from '../../components/CheckOutBtn';
 import styles from './cart.module.css';
 import { AddAndRemoveBtn } from '../../components/AddAndRemoveBtn';
+import { EmptyCartMessage } from '../../components/EmptyCartMessage';
 /**
  * component that returns the cart page
  * @returns the main of the cart page
@@ -16,6 +17,7 @@ export function CartPage() {
     <main>
       <h1>Cart</h1>
       <section className={styles.cartSection}>
+        <EmptyCartMessage></EmptyCartMessage>
         {cart.map((cartItems) => (
           <div id={cartItems.id} className={styles.cartItem} key={cartItems.id}>
             <div className={styles.flexRow1}>

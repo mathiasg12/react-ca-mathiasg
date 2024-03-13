@@ -1,0 +1,15 @@
+.ContinueBtn {
+  color: #394759;
+  text-decoration: none;
+  margin: 20px auto;
+  background-color: white;
+  width: 200px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+}
+.ContinueBtn:hover {
+  background-color: #ffa501;
+  color: black;
+}

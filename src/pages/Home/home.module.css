@@ -21,6 +21,13 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
   text-decoration: none;
 }
+.productCard:hover,
+.productCard:active,
+.productCard:focus {
+  box-shadow: 0 0 10px #000000;
+  opacity: 0.7;
+  transform: translateY(-2px);
+}
 .rating,
 .title {
   margin: 0;

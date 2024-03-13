@@ -1,0 +1,31 @@
+.CheckoutSuccessContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 150px 10px 0 10px;
+  background-color: #394759;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+.truck {
+  font-size: 50px;
+  margin: 20px auto 20px 0;
+  position: relative;
+  animation: driveAnimation 6s infinite ease-in;
+}
+
+@keyframes driveAnimation {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100%);
+  }
+}
+@media screen and (min-width: 600px) {
+  .CheckoutSuccessContainer {
+    margin: 0 auto;
+  }
+}

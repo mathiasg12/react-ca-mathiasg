@@ -21,6 +21,11 @@
   color: white;
   text-decoration: none;
 }
+.link:hover,
+.link:active,
+.link:focus {
+  color: #ffa501;
+}
 .imgWrapper {
   min-height: 70px;
   max-width: 30vw;

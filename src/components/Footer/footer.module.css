@@ -2,7 +2,13 @@
   background-color: #394759;
   padding: 10px 0;
 }
-.footerItem {
+.footerItem,
+.footerLink {
   color: white;
   margin: 10px 5px;
+}
+.footerLink:hover,
+.footerLink:focus,
+.footerLink:active {
+  color: #ffa501;
 }
