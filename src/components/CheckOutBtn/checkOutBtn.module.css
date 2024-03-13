@@ -10,3 +10,10 @@
   padding-top: 10px;
   padding-bottom: 12px;
 }
+.checkOutBtnEmpty {
+  background-color: #83878b;
+}
+.checkOutBtn:hover {
+  background-color: #ffa501;
+  color: black;
+}

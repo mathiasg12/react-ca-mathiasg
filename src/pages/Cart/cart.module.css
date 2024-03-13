@@ -33,6 +33,7 @@ h1 {
 }
 .title {
   font-size: 1em;
+  max-width: 120px;
 }
 .checkOutSection {
   display: flex;

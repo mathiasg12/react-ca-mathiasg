@@ -6,6 +6,7 @@ import styles from './layout.module.css';
 import { HomePage } from '../../pages/Home';
 import { ProductSpecific } from '../../pages/ProductSpecific';
 import { CartPage } from '../../pages/Cart';
+import { CheckoutSuccessPage } from '../../pages/CheckoutSuccessPage';
 /**
  * the layout component displays the basic jsx that every page has, this includes the header, footer and Routes to the different pages
  */
@@ -22,6 +23,10 @@ export function Layout() {
         ></Route>
         <Route path="contact"></Route>
         <Route path="cart" element={<CartPage></CartPage>}></Route>
+        <Route
+          path="checkOutSuccess"
+          element={<CheckoutSuccessPage></CheckoutSuccessPage>}
+        ></Route>
       </Routes>
       <Footer></Footer>
     </div>

@@ -5,3 +5,7 @@
   color: white;
   background-color: #394759;
 }
+.addToCart:hover {
+  background-color: #ffa501;
+  color: black;
+}

@@ -7,7 +7,7 @@ import styles from './footer.module.css';
 export function Footer() {
   return (
     <footer className={styles.footer}>
-      <Link to="/contact" className={styles.footerItem}>
+      <Link to="/contact" className={styles.footerLink}>
         Contact us
       </Link>
       <p className={styles.footerItem}>copyright &copy</p>
