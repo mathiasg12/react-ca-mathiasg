@@ -1,6 +1,12 @@
 .checkOutBtn {
   width: 200px;
-  height: 40px;
   color: white;
   background-color: #394759;
+  margin-bottom: 60px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 12px;
 }
