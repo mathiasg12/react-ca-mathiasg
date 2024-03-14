@@ -21,7 +21,7 @@
     left: 0;
   }
   100% {
-    left: calc(100%);
+    left: calc(85%);
   }
 }
 @media screen and (min-width: 600px) {
