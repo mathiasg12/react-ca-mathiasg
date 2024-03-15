@@ -16,11 +16,19 @@ export function ContactForm() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({ resolver: yupResolver(formSchema) });
   function formOnSubmit(data) {
     console.log(data);
-    setFormSentVisible(true);
+    setFormSentVisible(() => {
+      const formSentVisible = true;
+      setTimeout(() => {
+        setFormSentVisible(false);
+      }, 10000);
+      return formSentVisible;
+    });
+    reset();
   }
   return (
     <form className={styles.form} onSubmit={handleSubmit(formOnSubmit)}>
@@ -47,7 +55,6 @@ export function ContactForm() {
           {...register('email')}
         ></input>
       </div>
-
       <div className={styles.formItem}>
         <label htmlFor="subject">Subject</label>
         <p className={styles.errorMessage}>{errors.subject?.message}</p>
