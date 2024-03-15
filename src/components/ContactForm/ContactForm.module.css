@@ -8,6 +8,7 @@
   margin: 50px auto;
   max-width: 600px;
   border-radius: 2%;
+  position: relative;
 }
 .formItem {
   display: flex;
