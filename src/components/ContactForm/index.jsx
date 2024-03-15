@@ -4,6 +4,9 @@ import { SubmitBtn } from '../SubmitBtn';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { formSchema } from '../../hooks/yupSchema';
+/**
+ * component that returns the jsx for the contact form, the form includeds 4 inputs and a submit button component
+ */
 export function ContactForm() {
   const {
     register,

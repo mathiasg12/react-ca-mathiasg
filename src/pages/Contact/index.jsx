@@ -1,6 +1,10 @@
 import React from 'react';
 import { ContactForm } from '../../components/ContactForm';
 import styles from './contactPage.module.css';
+/**
+ * component that returns jsx for the contact page
+ * @returns contact page
+ */
 export function ContactPage() {
   return (
     <main>

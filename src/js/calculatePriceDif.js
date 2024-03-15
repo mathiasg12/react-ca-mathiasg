@@ -1,5 +1,5 @@
 /**
- * function that calculates the price difference
+ * function that calculates the price difference between the discounted price and the normal price (returns the difference in percent)
  * @param {number} orgPrice
  * @param {number} discPrice
  * @returns {number} the price difference in percent
