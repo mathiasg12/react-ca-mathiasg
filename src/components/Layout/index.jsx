@@ -9,7 +9,7 @@ import { CartPage } from '../../pages/Cart';
 import { CheckoutSuccessPage } from '../../pages/CheckoutSuccessPage';
 import { ContactPage } from '../../pages/Contact';
 /**
- * the layout component displays the basic jsx that every page has, this includes the header, footer and Routes to the different pages
+ * The layout component displays the basic jsx that every page has, this includes the header, footer and Routes to the different pages
  */
 export function Layout() {
   return (

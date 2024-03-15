@@ -1,4 +1,7 @@
 import * as yup from 'yup';
+/**
+ * Schema for yup form validation
+ */
 export const formSchema = yup.object({
   fullName: yup
     .string()
