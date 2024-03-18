@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from '../Header';
-import { Outlet, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { Footer } from '../Footer';
 import styles from './layout.module.css';
 import { HomePage } from '../../pages/Home';
@@ -15,7 +15,6 @@ export function Layout() {
   return (
     <div className={styles.wrapper}>
       <Header></Header>
-      <Outlet></Outlet>
       <Routes>
         <Route path="/" element={<HomePage></HomePage>}></Route>
         <Route
