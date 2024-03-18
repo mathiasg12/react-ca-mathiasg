@@ -12,8 +12,13 @@
 }
 .checkOutBtnEmpty {
   background-color: #83878b;
+  cursor: pointer;
 }
 .checkOutBtn:hover {
   background-color: #ffa501;
   color: black;
+}
+.checkOutBtnEmpty:hover {
+  background-color: #83878b;
+  color: rgb(255, 255, 255);
 }

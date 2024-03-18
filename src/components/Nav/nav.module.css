@@ -22,8 +22,7 @@
   text-decoration: none;
 }
 .link:hover,
-.link:active,
-.link:focus {
+.link:active {
   color: #ffa501;
 }
 .imgWrapper {

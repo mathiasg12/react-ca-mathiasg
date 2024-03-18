@@ -14,7 +14,6 @@ export function ProductSpecific() {
     'https://v2.api.noroff.dev/online-shop' + '/' + id
   );
   let singleProduct = products && products.data ? products.data : {};
-  console.log(singleProduct);
   if (loading || !singleProduct) {
     return <div>Loading....</div>;
   }
@@ -22,7 +21,6 @@ export function ProductSpecific() {
     return <div>An error has occured please try again later</div>;
   }
   if (!loading) {
-    console.log(singleProduct);
     const {
       title,
       description,

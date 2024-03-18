@@ -11,7 +11,11 @@ export function Nav() {
     <nav className={styles.navigation}>
       <Link to={'/'}>
         <div className={styles.imgWrapper}>
-          <img src="pictures/logo.png" alt="logo" className={styles.img}></img>
+          <img
+            src="../pictures/logo.png"
+            alt="logo"
+            className={styles.img}
+          ></img>
         </div>
       </Link>
       <ul className={styles.ul}>

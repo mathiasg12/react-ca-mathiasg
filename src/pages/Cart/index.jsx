@@ -11,8 +11,6 @@ import { EmptyCartMessage } from '../../components/EmptyCartMessage';
 export function CartPage() {
   const cart = useCartStore((state) => state.cart);
   const total = useCartStore((state) => state.total);
-  console.log(cart);
-  console.log(total);
   return (
     <main>
       <h1>Cart</h1>
