@@ -32,7 +32,7 @@ export function ProductSpecific() {
     } = singleProduct;
     const imageUrl = image && image.url ? image.url : '';
     return (
-      <main>
+      <main className={styles.specificMain}>
         <section className={styles.productSection}>
           <div className={styles.imgWrapper}>
             <img

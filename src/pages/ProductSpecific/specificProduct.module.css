@@ -1,3 +1,8 @@
+.specificMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .imgWrapper {
   max-width: 200px;
   max-height: 300px;

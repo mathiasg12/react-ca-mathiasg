@@ -21,7 +21,7 @@ export function HomePage() {
   }
   if (!loading) {
     return (
-      <main>
+      <main className={styles.homeMain}>
         <SearchBar array={allProducts}></SearchBar>
         <section className={styles.productSection}>
           {allProducts.map((item) => (
