@@ -4,7 +4,7 @@ import styles from './home.module.css';
 import { SearchBar } from '../../components/SearchBar';
 import { ProductCard } from '../../components/ProductCard';
 /**
- * component that creates the homepage with a search bar component and loops thrue the products from the api
+ * component that creates the homepage with a search bar component and the product card component
  * @returns home page
  */
 export function HomePage() {
