@@ -6,6 +6,7 @@
 .footerLink {
   color: white;
   margin: 10px 5px;
+  font-size: 1.2em;
 }
 .footerLink:hover,
 .footerLink:focus,
