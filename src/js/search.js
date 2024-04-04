@@ -10,6 +10,5 @@ export function search(array, searchValue) {
       return true;
     }
   });
-  console.log(searchedProducts);
   return searchedProducts;
 }

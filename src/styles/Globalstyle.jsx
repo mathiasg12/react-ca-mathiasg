@@ -15,5 +15,10 @@ p,label{
     margin-top: 200px;
 }
 }
+@media screen and (max-width: 400px) {
+  main{
+    margin-top: 150px;
+}
+}
 `;
 export default GlobalStyle;

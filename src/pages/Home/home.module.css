@@ -1,6 +1,24 @@
 .homeMain {
   margin-top: 150px;
 }
+.headingAndBtnWrapper {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 10px;
+  padding-top: 0;
+}
+.AllProductsBtn {
+  height: 40px;
+  width: 140px;
+  background-color: #394759;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.AllProductsBtn:hover {
+  background-color: rgb(255, 165, 1);
+  color: black;
+}
 @media screen and (min-width: 600px) {
   .homeMain {
     margin-top: 200px;
