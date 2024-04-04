@@ -22,10 +22,18 @@ export function HomePage() {
   };
   const allProducts = products && products.data ? products.data : [];
   if (loading || !allProducts) {
-    return <div>Loading....</div>;
+    return (
+      <main className={styles.homeMain}>
+        <h2 className={styles.loading}>Loading....</h2>
+      </main>
+    );
   }
   if (newError) {
-    return <div>An error has occured please try again later</div>;
+    return (
+      <main className={styles.homeMain}>
+        <h1>An error has occured please try again later</h1>
+      </main>
+    );
   }
   if (!loading) {
     if (searched === false) {
