@@ -7,10 +7,15 @@ import styles from './footer.module.css';
 export function Footer() {
   return (
     <footer className={styles.footer}>
-      <Link to="/contact" className={styles.footerLink}>
-        Contact us
-      </Link>
-      <p className={styles.footerItem}>copyright &copy</p>
+      <div className={styles.linksWrapper}>
+        <Link to="/contact" className={styles.footerLink}>
+          Contact us
+        </Link>
+        <Link to="/" className={styles.footerLink}>
+          Home
+        </Link>
+      </div>
+      <p className={styles.footerItem}>copyright &copy;</p>
     </footer>
   );
 }
