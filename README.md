@@ -61,6 +61,25 @@ The 404 page is a page containing only a message that the page doesn't exist. It
 - CSS
 - JS
 
+## Requirements
+
+for development you need:
+
+- a code editor
+- Node.js version 20.9.0 or later is recomended
+- npm(Node Package Manager)
+
+or users you need:
+
+- a web browser
+
+## Installing
+
+- clone the repository from github
+- open the repository in a code editor
+- install dependencies `npm install`
+- open live server `npm start`
+
 ## Running
 
 - live site at: https://ract-e-shop.netlify.app/
@@ -96,3 +115,7 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Contact
+
+My Email address: mathiasgausl@gmail.com
