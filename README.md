@@ -1,5 +1,7 @@
 # E-shop (React project)
 
+![image](public/pictures/es.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Description
@@ -37,6 +39,21 @@ The 404 page is a page containing only a message that the page doesn't exist. It
 - Colors: The primary color is dark blue: rgb(57, 71, 89), and white. Secondary colors include an orange color for the logo and button color: rgb(255, 165, 1).
 - Grid: There is a single-column grid for mobile and a responsive 2-4 column grid for desktop and tablets.
 
+## Functionality
+
+- Working cart made with zustand
+- users can add to cart
+- users can remove items from cart
+- users can clear cart
+- users can procced to checkout
+- users can view a total price of all products on cart
+- users can view a product specific page by clicking the product card
+- all products are fetch from the Noroff Api
+- reviews on a product are fetched and displayed if there are any
+- contact form
+- all inputs are validated using yup form controll
+- look-ahead searchbar with a overlay that shows products that matches the search
+
 ## Built with
 
 - React
@@ -59,11 +76,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
